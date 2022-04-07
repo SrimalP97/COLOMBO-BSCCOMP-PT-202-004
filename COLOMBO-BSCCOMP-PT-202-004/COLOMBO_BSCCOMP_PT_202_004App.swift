@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import UIKit
+import Firebase
+
 
 @main
 struct COLOMBO_BSCCOMP_PT_202_004App: App {
@@ -14,4 +17,18 @@ struct COLOMBO_BSCCOMP_PT_202_004App: App {
             ContentView()
         }
     }
+}
+
+
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+ var window: UIWindow?
+
+func application(_ application: UIApplication,
+   didFinishLaunchingWithOptions launchOptions:
+                 [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+   FirebaseApp.configure()
+
+    return true
+ }
 }
