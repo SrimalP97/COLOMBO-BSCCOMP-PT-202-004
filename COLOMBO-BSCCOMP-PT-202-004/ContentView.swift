@@ -5,14 +5,31 @@
 //  Created by Prabuddha Amunugama on 2022-04-07.
 //
 
+
+
 import SwiftUI
 
 
 
+
+
 struct ContentView: View {
+    @AppStorage("current_status") var status = false
+    
     var body: some View {
-        Text("Hello")
-            .padding()
+    
+
+        NavigationView{
+            if status{
+                Home()
+            }else{
+                Home()
+            }
+        }
+    
+
+        
+        
     }
 }
 
@@ -21,4 +38,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
