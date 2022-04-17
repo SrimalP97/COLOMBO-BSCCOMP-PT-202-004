@@ -5,6 +5,11 @@
 //  Created by Prabuddha Amunugama on 2022-04-15.
 //
 
+
+
+
+
+
 import UIKit
 import Vision
 import SwiftUI
@@ -135,6 +140,12 @@ class AdvertisementViewModel: ObservableObject {
 
     }
 }
+
+
+
+
+
+
 
 
 

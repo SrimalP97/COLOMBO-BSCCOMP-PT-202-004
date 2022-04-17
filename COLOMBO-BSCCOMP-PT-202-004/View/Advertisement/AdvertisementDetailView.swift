@@ -6,6 +6,8 @@
 //
 
 
+
+
 import SwiftUI
 import SDWebImageSwiftUI
 
@@ -54,7 +56,7 @@ struct AdvertisementDetailView: View {
                         .font(.headline)
                         .multilineTextAlignment(.leading)
 
-                    Text("\(adsDetail.townVillage),\(adsDetail.province) - \(adsDetail.district)".uppercased())
+                    Text("\(adsDetail.townVillage),\(adsDetail.district) - \(adsDetail.province)".uppercased())
                         .fontWeight(.bold)
                         .foregroundColor(.black)
                     

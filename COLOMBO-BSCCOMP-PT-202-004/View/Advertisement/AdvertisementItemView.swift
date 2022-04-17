@@ -6,6 +6,9 @@
 //
 
 
+
+
+
 import SwiftUI
 import SDWebImageSwiftUI
 import Firebase
@@ -78,4 +81,16 @@ struct AdvertisementItemView: View {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -45,7 +45,7 @@ struct AdvertisementView: View {
                         .padding(.top, 10)
                     
                         VStack(alignment: .leading){
-                            Text("Select Deed Image")
+                            Text(" Deed Image")
                                 .foregroundColor(.gray)
                                 .font(.caption)
                             
@@ -88,7 +88,7 @@ struct AdvertisementView: View {
                         .padding(.top, 10)
 
                         VStack(alignment: .leading){
-                            Text("Select Property Images")
+                            Text(" Property Images")
                                 .foregroundColor(.gray)
                                 .font(.caption)
                             HStack(spacing: 15){
@@ -103,11 +103,11 @@ struct AdvertisementView: View {
                                     Image(systemName: "plus")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 30, height: 30)
+                                        .frame(width: 20, height: 20)
                                         .foregroundColor(.white)
                                         .padding()
                                 }
-                                .background(Color("Color"))
+                                .background(Color.green)
                                 .cornerRadius(6)
 
                                 }

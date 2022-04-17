@@ -52,7 +52,7 @@ struct CustomPicker: View {
                             .padding(.vertical)
                             .frame(width: UIScreen.main.bounds.width - 50)
                     }
-                    .background(Color("Color").opacity((self.selected.count != 0) ? 1 : 0.5))
+                    .background(Color.green.opacity((self.selected.count != 0) ? 1 : 0.5))
                     .cornerRadius(10)
                     .padding(.horizontal,20)
                     .padding(.bottom, 25)
