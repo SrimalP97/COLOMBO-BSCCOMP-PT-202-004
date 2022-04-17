@@ -37,6 +37,11 @@
                BlueprintName = "COLOMBO-BSCCOMP-PT-202-004Tests"
                ReferencedContainer = "container:COLOMBO-BSCCOMP-PT-202-004.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "COLOMBO_BSCCOMP_PT_202_004Tests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO">

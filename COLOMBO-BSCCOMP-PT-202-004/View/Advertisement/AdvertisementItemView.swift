@@ -34,8 +34,9 @@ struct AdvertisementItemView: View {
             
             }
             
-            WebImage(url: URL(string: adsDetails.imagesArray[0])!)
+             WebImage(url: URL(string: adsDetails.imagesArray[0])!)
                 .resizable()
+            
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width - 30, height: 250)
                 .clipped()
