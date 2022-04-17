@@ -136,10 +136,12 @@ struct Home: View {
             locationManager.locationManager.delegate = locationManager
         }
         .onChange(of: homeVM.search, perform: { value in
-            // to avoid Continuos Search Request...
+            
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
                 if value == homeVM.search && homeVM.search != ""{
-                    // search data.....
+             
+                    
                     homeVM.searchData()
                 }
             }

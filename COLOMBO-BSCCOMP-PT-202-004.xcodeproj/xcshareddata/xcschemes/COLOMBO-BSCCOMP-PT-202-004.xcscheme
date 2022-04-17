@@ -41,6 +41,9 @@
                <Test
                   Identifier = "COLOMBO_BSCCOMP_PT_202_004Tests">
                </Test>
+               <Test
+                  Identifier = "LoginViewModelTest">
+               </Test>
             </SkippedTests>
          </TestableReference>
          <TestableReference
@@ -52,6 +55,11 @@
                BlueprintName = "COLOMBO-BSCCOMP-PT-202-004UITests"
                ReferencedContainer = "container:COLOMBO-BSCCOMP-PT-202-004.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "UITestLoginView">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

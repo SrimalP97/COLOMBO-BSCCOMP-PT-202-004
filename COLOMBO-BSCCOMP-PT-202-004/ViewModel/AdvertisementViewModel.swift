@@ -35,7 +35,8 @@ class AdvertisementViewModel: ObservableObject {
         return formatter
     }()
     
-    //OCR Checking Word and match to Given NIC
+    //OCR Checking given image match to Given NI
+    
     func checkImage(image: UIImage){
         if let cgImage = image.cgImage {
           let requestHandler = VNImageRequestHandler(cgImage: cgImage)
@@ -50,7 +51,9 @@ class AdvertisementViewModel: ObservableObject {
             }
             
             DispatchQueue.main.async {
+                
 //                print(recognizedStrings)
+                
                 if recognizedStrings.contains(where: {$0 == "NIC . \(self.NIC)V" }){
                     print("Yes Contain Words")
                     self.imageFlag = true

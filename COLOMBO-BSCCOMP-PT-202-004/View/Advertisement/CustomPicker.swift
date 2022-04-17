@@ -77,7 +77,8 @@ struct CustomPicker: View {
             .onTapGesture {
                 self.show.toggle()
         })
-//        .navigationBarHidden(true)
+
+        
         .onAppear{
             PHPhotoLibrary.requestAuthorization({ (status) in
                 switch(status){

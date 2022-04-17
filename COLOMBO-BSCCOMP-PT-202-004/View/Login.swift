@@ -23,6 +23,7 @@ struct Login: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: UIScreen.main.bounds.width / 1.5, height: UIScreen.main.bounds.height / 3)
+                                .accessibility(identifier: "back image")
                             
                             
                             NavigationLink {
@@ -39,7 +40,7 @@ struct Login: View {
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black.opacity(0.7))
-                            
+                                .accessibility(identifier: "Login msg")
                             TextField("Email", text: self.$loginVM.login.email)
                                 .textInputAutocapitalization(.never)
                                 .padding()
@@ -48,14 +49,17 @@ struct Login: View {
                                         .stroke(self.loginVM.login.email != "" ? Color("Color") : Color.black.opacity(0.7), lineWidth: 2)
                                 )
                                 .padding(.top, 25)
+                                .accessibility(identifier: "Email")
                             HStack(spacing: 15){
                                 VStack{
                                     if self.visible{
                                         TextField("Password", text: self.$loginVM.login.pass)
                                             .textInputAutocapitalization(.never)
+                                            .accessibility(identifier: "text pass")
                                     }else {
                                         SecureField("Password", text: self.$loginVM.login.pass)
                                             .textInputAutocapitalization(.never)
+                                            .accessibility(identifier: "secure pass")
                                     }
                                 }
                                 
@@ -64,6 +68,7 @@ struct Login: View {
                                 } label: {
                                     Image(systemName: self.visible ? "eye.slash.fill" : "eye.fill")
                                         .foregroundColor(Color.black.opacity(0.7))
+                                        .accessibility(identifier: "eye button")
                                 }
 
                             }
@@ -85,6 +90,7 @@ struct Login: View {
                                       
                                         .fontWeight(.bold)
                                         .foregroundColor(Color.red)
+                                        .accessibility(identifier: "forgot pass")
                                 }
                             }
                             .padding(.top, 20)
@@ -103,6 +109,7 @@ struct Login: View {
                                     .foregroundColor(.white)
                                     .padding(.vertical)
                                     .frame(width: UIScreen.main.bounds.width - 50)
+                                    .accessibility(identifier: "sign in")
                             }
                             .background(Color.green)
                             .cornerRadius(10)

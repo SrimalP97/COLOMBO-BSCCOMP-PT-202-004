@@ -16,6 +16,8 @@
 		12272BA127FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12272BA027FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift */; };
 		12272BA327FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12272BA227FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift */; };
 		1256AC58280BA682007F7476 /* PerformanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1256AC57280BA682007F7476 /* PerformanceTest.swift */; };
+		12863915280C77B40082DCDA /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12863914280C77B40082DCDA /* LoginViewModelTest.swift */; };
+		12863919280C7AA50082DCDA /* UITestLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12863918280C7AA50082DCDA /* UITestLoginView.swift */; };
 		12959C672809A48300D37645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12959C662809A48200D37645 /* GoogleService-Info.plist */; };
 		129AE93028099BE200ED162E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 129AE92F28099BE200ED162E /* FirebaseAuth */; };
 		129AE93228099BE200ED162E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 129AE93128099BE200ED162E /* FirebaseFirestore */; };
@@ -82,6 +84,8 @@
 		12272BA027FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COLOMBO_BSCCOMP_PT_202_004UITests.swift; sourceTree = "<group>"; };
 		12272BA227FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1256AC57280BA682007F7476 /* PerformanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTest.swift; sourceTree = "<group>"; };
+		12863914280C77B40082DCDA /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
+		12863918280C7AA50082DCDA /* UITestLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestLoginView.swift; sourceTree = "<group>"; };
 		12959C662809A48200D37645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12959C682809AF5700D37645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		12B9480B280AF6310041FD5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				12272B9627FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004Tests.swift */,
+				12863914280C77B40082DCDA /* LoginViewModelTest.swift */,
 			);
 			path = "COLOMBO-BSCCOMP-PT-202-004Tests";
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 			children = (
 				12272BA027FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift */,
 				12272BA227FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift */,
+				12863918280C7AA50082DCDA /* UITestLoginView.swift */,
 			);
 			path = "COLOMBO-BSCCOMP-PT-202-004UITests";
 			sourceTree = "<group>";
@@ -465,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12863915280C77B40082DCDA /* LoginViewModelTest.swift in Sources */,
 				12272B9727FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +482,7 @@
 			files = (
 				1256AC58280BA682007F7476 /* PerformanceTest.swift in Sources */,
 				12272BA327FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift in Sources */,
+				12863919280C7AA50082DCDA /* UITestLoginView.swift in Sources */,
 				12272BA127FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
