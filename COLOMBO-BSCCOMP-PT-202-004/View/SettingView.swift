@@ -21,7 +21,7 @@ struct SettingView: View {
                     TextField("NIC", text: $settingVM.userDetails.nic).textInputAutocapitalization(.never)
                     TextField("Mobile Number", text: $settingVM.userDetails.mobile).textInputAutocapitalization(.never)
                     Text(settingVM.userDetails.email).foregroundColor(.gray)
-                    Text(settingVM.userDetails.selectedGender).foregroundColor(.gray)
+                    Text(settingVM.userDetails.gender).foregroundColor(.gray)
                 }
 
                 Section(header: Text("Action")){

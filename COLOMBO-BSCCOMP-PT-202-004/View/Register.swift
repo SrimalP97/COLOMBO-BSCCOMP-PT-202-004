@@ -49,9 +49,9 @@ struct Register: View {
                                 .padding(.top, 20)
                             
                             HStack(spacing: 15){
-                                Text("Select Gender")
+                                Text("Gender")
                                 Spacer()
-                                Picker("Gender", selection: $registerVM.register.selectedGender) {
+                                Picker("Gender", selection: $registerVM.register.gender) {
                                     ForEach(registerVM.genderArray, id: \.self) {
                                         Text($0)
                                     }
@@ -60,7 +60,7 @@ struct Register: View {
                             .padding()
                             .background(
                                 RoundedRectangle(cornerRadius: 4)
-                                    .stroke(self.registerVM.register.selectedGender != "Male." ? Color("Color") :  Color.black.opacity(0.7), lineWidth: 2)
+                                    .stroke(self.registerVM.register.gender != "Male." ? Color("Color") :  Color.black.opacity(0.7), lineWidth: 2)
                             )
                             .padding(.top, 20)
                             

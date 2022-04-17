@@ -142,11 +142,11 @@ struct AdvertisementView: View {
                             )
                             .padding(.top, 10)
                     
-                    TextField("Land / House", text: self.$advertisementVM.advertisement.landORhouse)
+                    TextField("Land / House", text: self.$advertisementVM.advertisement.category)
                         .padding()
                         .background(
                             RoundedRectangle(cornerRadius: 4)
-                                .stroke(self.advertisementVM.advertisement.landORhouse != "" ? Color("Color") : Color.black.opacity(0.7), lineWidth: 2)
+                                .stroke(self.advertisementVM.advertisement.category != "" ? Color("Color") : Color.black.opacity(0.7), lineWidth: 2)
                         )
                         .padding(.top, 10)
                     

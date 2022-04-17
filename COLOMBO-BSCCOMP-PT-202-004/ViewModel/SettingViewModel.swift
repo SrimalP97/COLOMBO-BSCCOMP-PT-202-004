@@ -12,7 +12,7 @@ import Firebase
 class SettingViewModel: ObservableObject {
     @AppStorage("current_status") var status = false
     @Published var message = ErrorMessageModel(alert: false, error: "", topic: "Error", isLoading: false, guestUser: false)
-    @Published var userDetails = RegisterModel(nic: "", name: "", dob: Date(), selectedGender: "Male.", mobile: "", email: "", pass: "", repass: "")
+    @Published var userDetails = RegisterModel(nic: "", name: "", dob: Date(), gender: "Male.", mobile: "", email: "", pass: "", repass: "")
     
     let defaults = UserDefaults.standard
     let ref = Firestore.firestore()
@@ -58,7 +58,7 @@ class SettingViewModel: ObservableObject {
         userDetails.nic = defaults.string(forKey: "userNIC") ?? ""
         userDetails.name = defaults.string(forKey: "userName") ?? ""
         userDetails.email = defaults.string(forKey: "userEmail") ?? ""
-        userDetails.selectedGender = defaults.string(forKey: "userGender") ?? ""
+        userDetails.gender = defaults.string(forKey: "userGender") ?? ""
     }
     
     func logout(){

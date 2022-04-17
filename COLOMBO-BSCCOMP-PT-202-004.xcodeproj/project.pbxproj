@@ -15,6 +15,7 @@
 		12272B9727FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12272B9627FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004Tests.swift */; };
 		12272BA127FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12272BA027FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift */; };
 		12272BA327FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12272BA227FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift */; };
+		1256AC58280BA682007F7476 /* PerformanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1256AC57280BA682007F7476 /* PerformanceTest.swift */; };
 		12959C672809A48300D37645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12959C662809A48200D37645 /* GoogleService-Info.plist */; };
 		129AE93028099BE200ED162E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 129AE92F28099BE200ED162E /* FirebaseAuth */; };
 		129AE93228099BE200ED162E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 129AE93128099BE200ED162E /* FirebaseFirestore */; };
@@ -80,7 +81,7 @@
 		12272B9C27FF72E100427932 /* COLOMBO-BSCCOMP-PT-202-004UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COLOMBO-BSCCOMP-PT-202-004UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12272BA027FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COLOMBO_BSCCOMP_PT_202_004UITests.swift; sourceTree = "<group>"; };
 		12272BA227FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		12916B64280992C900777929 /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		1256AC57280BA682007F7476 /* PerformanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTest.swift; sourceTree = "<group>"; };
 		12959C662809A48200D37645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12959C682809AF5700D37645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		12B9480B280AF6310041FD5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,13 +168,14 @@
 		12272B8427FF72E000427932 /* COLOMBO-BSCCOMP-PT-202-004 */ = {
 			isa = PBXGroup;
 			children = (
-				12959C682809AF5700D37645 /* Info.plist */,
 				12272B8527FF72E000427932 /* COLOMBO_BSCCOMP_PT_202_004App.swift */,
 				12E8D9932809621E003B8F19 /* Model */,
 				12E8D9AE280965D0003B8F19 /* View */,
 				12E8D99E28096345003B8F19 /* ViewModel */,
 				1256AC54280B86E6007F7476 /* Services */,
 				12B9480B280AF6310041FD5B /* Assets.xcassets */,
+				12959C682809AF5700D37645 /* Info.plist */,
+				12272B8C27FF72E100427932 /* Preview Assets.xcassets */,
 				12272B8B27FF72E100427932 /* Preview Content */,
 			);
 			path = "COLOMBO-BSCCOMP-PT-202-004";
@@ -182,7 +184,7 @@
 		12272B8B27FF72E100427932 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				12272B8C27FF72E100427932 /* Preview Assets.xcassets */,
+				1256AC56280BA604007F7476 /* PerfomanceTest */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -215,6 +217,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		1256AC56280BA604007F7476 /* PerfomanceTest */ = {
+			isa = PBXGroup;
+			children = (
+				1256AC57280BA682007F7476 /* PerformanceTest.swift */,
+			);
+			path = PerfomanceTest;
+			sourceTree = "<group>";
+		};
 		12E8D9932809621E003B8F19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +233,6 @@
 				12E8D998280962A4003B8F19 /* ErrorMessageModel.swift */,
 				12E8D99A280962C3003B8F19 /* PickerImageModel.swift */,
 				12E8D99C280962EA003B8F19 /* AdvertisementModel.swift */,
-				12916B64280992C900777929 /* ForgetPasswordViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1256AC58280BA682007F7476 /* PerformanceTest.swift in Sources */,
 				12272BA327FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift in Sources */,
 				12272BA127FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift in Sources */,
 			);

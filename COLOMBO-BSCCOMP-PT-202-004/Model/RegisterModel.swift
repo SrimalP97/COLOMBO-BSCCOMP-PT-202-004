@@ -11,7 +11,7 @@ struct RegisterModel {
     var nic : String
     var name : String
     var dob : Date
-    var selectedGender : String
+    var gender : String
     var mobile : String
     var email : String
     var pass : String

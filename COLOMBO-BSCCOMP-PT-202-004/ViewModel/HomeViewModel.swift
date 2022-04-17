@@ -57,7 +57,7 @@ class HomeViewModel: ObservableObject {
                         return p1.dateCreated > p2.dateCreated
                     }
                     self.filteredAdvertisement = self.advertisementPost.filter{
-                        return $0.province.lowercased().contains(self.province?.lowercased() ?? "Southern Province ")
+                        return $0.province.lowercased().contains(self.province?.lowercased() ?? "Western Province ")
                     }
                 }
             }

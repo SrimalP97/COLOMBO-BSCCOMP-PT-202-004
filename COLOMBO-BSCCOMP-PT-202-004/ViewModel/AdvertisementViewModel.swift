@@ -17,7 +17,7 @@ class AdvertisementViewModel: ObservableObject {
     var locationManager = LocationManagerHelper()
     @Published var userLatitude: String = "0"
     @Published var userLongitude: String = "0"
-    @Published var advertisement = AdvertisementModel(price: 0.0 , landORhouse: "", landSize: 0.0, district: "", townVillage: "")
+    @Published var advertisement = AdvertisementModel(price: 0.0 , category: "", landSize: 0.0, district: "", townVillage: "")
     @Published var pickerAdvertisement = PickerAdvertisements(selected: [], show: false)
     @Published var singleImage = SingleImage(images: Data(), imagePicker: false)
     @Published var message = ErrorMessageModel(alert: false, error: "", topic: "Error", isLoading: false, guestUser: false)
@@ -76,7 +76,7 @@ class AdvertisementViewModel: ObservableObject {
         if self.advertisement.price == 0.0{
             self.message.alert.toggle()
             self.message.error = "Price Cannot be empty!"
-        }else if self.advertisement.landORhouse == ""{
+        }else if self.advertisement.category == ""{
             self.message.alert.toggle()
             self.message.error = "Land/House Cannot be empty!"
         }else if self.advertisement.landSize == 0.0 {
@@ -110,7 +110,7 @@ class AdvertisementViewModel: ObservableObject {
                         "townVillage" :self.advertisement.townVillage,
                         "district" : self.advertisement.district,
                         "landSize" : self.advertisement.landSize,
-                        "landORhouse" : self.advertisement.landORhouse,
+                        "landORhouse" : self.advertisement.category,
                         "price" : self.advertisement.price,
                         "province" : province,
                         "deedImage" : url,
@@ -125,7 +125,7 @@ class AdvertisementViewModel: ObservableObject {
                             self.message.isLoading = false
                             self.message.topic = "Success"
                             self.message.error = "Advertisement Uploaded Successfully"
-                            self.advertisement = AdvertisementModel(price: 0.0 , landORhouse: "", landSize: 0.0, district: "", townVillage: "")
+                            self.advertisement = AdvertisementModel(price: 0.0 , category: "", landSize: 0.0, district: "", townVillage: "")
                             self.pickerAdvertisement = PickerAdvertisements(selected: [], show: false)
                             self.singleImage = SingleImage(images: Data(), imagePicker: false)
                         }

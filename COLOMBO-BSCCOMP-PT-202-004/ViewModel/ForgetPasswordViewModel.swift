@@ -17,7 +17,7 @@ class ForgetPasswordViewModel: ObservableObject {
         if self.login.email != "" {
             self.resetPassword()
         }else{
-            self.message.error = "Email ID is Empty"
+            self.message.error = "Please enter the Email address"
             self.message.alert.toggle()
         }
     }

@@ -19,7 +19,7 @@ class LoginViewModel: ObservableObject {
         if self.login.email != "" && self.login.pass != "" {
             loginWithEmail();
         } else {
-            self.message.error = "Please Fill the all the Fields properly"
+            self.message.error = "Invalid user name or password !"
             self.message.alert.toggle()
         }
     }

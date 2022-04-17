@@ -10,7 +10,7 @@ import SwiftUI
 import Firebase
 
 class RegisterViewModel: ObservableObject {
-    @Published var register = RegisterModel(nic: "", name: "", dob: Date(), selectedGender: "Male.", mobile: "", email: "", pass: "", repass: "")
+    @Published var register = RegisterModel(nic: "", name: "", dob: Date(), gender: "Male.", mobile: "", email: "", pass: "", repass: "")
     @Published var message = ErrorMessageModel(alert: false, error: "", topic: "Error", isLoading: false, guestUser: false)
     @Published var genderArray = ["Male", "Female", "Other"]
     @Published var closedRange = Calendar.current.date(byAdding: .year, value: -120, to: Date())!
@@ -23,13 +23,13 @@ class RegisterViewModel: ObservableObject {
     
     func verifyRegistration(){
   
-        if self.register.nic != "" && self.register.name != "" && self.register.dob.formatted(date: .long, time: .omitted) != Date.init().formatted(date: .long, time: .omitted) && self.register.selectedGender != "Male." && self.register.mobile != "" && self.register.email != "" && self.register.pass != "" && self.register.repass != "" {
+        if self.register.nic != "" && self.register.name != "" && self.register.dob.formatted(date: .long, time: .omitted) != Date.init().formatted(date: .long, time: .omitted) && self.register.gender != "Male." && self.register.mobile != "" && self.register.email != "" && self.register.pass != "" && self.register.repass != "" {
             if self.register.nic.isValidNIC{
                 if  self.register.mobile.isValidContact {
                     if self.register.pass == self.register.repass {
                         createNewAccount()
                     }else{
-                            self.message.error = "Password mismatch"
+                            self.message.error = "Invalid Password"
                             self.message.alert.toggle()
                     }
                 }else{
@@ -61,7 +61,7 @@ class RegisterViewModel: ObservableObject {
                     "nic" : self.register.nic,
                     "name" :self.register.name,
                     "dob" : self.register.dob.formatted(date: .long, time: .omitted),
-                    "gender" : self.register.selectedGender,
+                    "gender" : self.register.gender,
                     "mobile" : self.register.mobile,
                     "email" : self.register.email,
                     "dateCreated" : Date.init()
@@ -74,7 +74,7 @@ class RegisterViewModel: ObservableObject {
                         self.message.isLoading = false
                         self.message.topic = "Success"
                         self.message.error = "Registered Successfully"
-                        self.register = RegisterModel(nic: "", name: "", dob: Date(), selectedGender: "Male.", mobile: "", email: "", pass: "", repass: "")
+                        self.register = RegisterModel(nic: "", name: "", dob: Date(), gender: "Male.", mobile: "", email: "", pass: "", repass: "")
                     }
                 }
             }

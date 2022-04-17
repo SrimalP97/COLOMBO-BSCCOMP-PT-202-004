@@ -10,7 +10,7 @@ import SwiftUI
 
 struct AdvertisementModel{
     var price: Double
-    var landORhouse: String
+    var category: String
     var landSize: Double
     var district: String
     var townVillage: String
