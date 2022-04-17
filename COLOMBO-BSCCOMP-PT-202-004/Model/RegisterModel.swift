@@ -17,3 +17,4 @@ struct RegisterModel {
     var pass : String
     var repass : String
 }
+

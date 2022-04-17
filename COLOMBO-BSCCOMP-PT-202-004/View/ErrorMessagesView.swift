@@ -41,13 +41,13 @@ struct ErrorMessagesView: View {
                     Button {
                         self.alert.toggle()
                     } label: {
-                        Text("Cancel")
+                        Text("Ok")
                             .foregroundColor(.white)
                             .fontWeight(.bold)
                             .frame(width: UIScreen.main.bounds.width - 120)
                     }
                     .padding(.vertical)
-                    .background(Color("Color"))
+                    .background(Color.red)
                     .cornerRadius(10)
                     .padding(.top, 25)
                  
@@ -55,13 +55,13 @@ struct ErrorMessagesView: View {
                      Button {
                          self.loginVM.status = true
                      } label: {
-                         Text("Login")
+                         Text("Sign In")
                              .foregroundColor(.white)
                              .fontWeight(.bold)
                              .frame(width: UIScreen.main.bounds.width - 120)
                      }
                      .padding(.vertical)
-                     .background(Color("Color"))
+                     .background(Color.green)
                      .cornerRadius(10)
                      .padding(.top, 25)
                  }

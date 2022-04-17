@@ -15,8 +15,6 @@
 		12272B9727FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12272B9627FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004Tests.swift */; };
 		12272BA127FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12272BA027FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift */; };
 		12272BA327FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12272BA227FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift */; };
-		12272BB227FF86F300427932 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12272BB127FF86F300427932 /* test.swift */; };
-		1259943827FF89D800E9A86B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259943727FF89D800E9A86B /* SwiftUIView.swift */; };
 		12959C672809A48300D37645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12959C662809A48200D37645 /* GoogleService-Info.plist */; };
 		129AE93028099BE200ED162E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 129AE92F28099BE200ED162E /* FirebaseAuth */; };
 		129AE93228099BE200ED162E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 129AE93128099BE200ED162E /* FirebaseFirestore */; };
@@ -82,8 +80,6 @@
 		12272B9C27FF72E100427932 /* COLOMBO-BSCCOMP-PT-202-004UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COLOMBO-BSCCOMP-PT-202-004UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12272BA027FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COLOMBO_BSCCOMP_PT_202_004UITests.swift; sourceTree = "<group>"; };
 		12272BA227FF72E100427932 /* COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COLOMBO_BSCCOMP_PT_202_004UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		12272BB127FF86F300427932 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		1259943727FF89D800E9A86B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		12916B64280992C900777929 /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
 		12959C662809A48200D37645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12959C682809AF5700D37645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -176,14 +172,9 @@
 				12E8D9932809621E003B8F19 /* Model */,
 				12E8D9AE280965D0003B8F19 /* View */,
 				12E8D99E28096345003B8F19 /* ViewModel */,
-				12E8D98C28096072003B8F19 /* Helpers */,
-				1205B16F2801575C00175F02 /* Launch Screen.storyboard */,
+				1256AC54280B86E6007F7476 /* Services */,
 				12B9480B280AF6310041FD5B /* Assets.xcassets */,
-				12272B8727FF72E000427932 /* ContentView.swift */,
-				12959C662809A48200D37645 /* GoogleService-Info.plist */,
 				12272B8B27FF72E100427932 /* Preview Content */,
-				12272BB127FF86F300427932 /* test.swift */,
-				1259943727FF89D800E9A86B /* SwiftUIView.swift */,
 			);
 			path = "COLOMBO-BSCCOMP-PT-202-004";
 			sourceTree = "<group>";
@@ -213,14 +204,15 @@
 			path = "COLOMBO-BSCCOMP-PT-202-004UITests";
 			sourceTree = "<group>";
 		};
-		12E8D98C28096072003B8F19 /* Helpers */ = {
+		1256AC54280B86E6007F7476 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				12E8D98D280960FB003B8F19 /* FirebaseHelper.swift */,
+				12959C662809A48200D37645 /* GoogleService-Info.plist */,
 				12E8D98F28096154003B8F19 /* LocationManagerHelper.swift */,
 				12E8D991280961B8003B8F19 /* Extensions.swift */,
+				12E8D98D280960FB003B8F19 /* FirebaseHelper.swift */,
 			);
-			path = Helpers;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		12E8D9932809621E003B8F19 /* Model */ = {
@@ -253,6 +245,8 @@
 		12E8D9AE280965D0003B8F19 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1205B16F2801575C00175F02 /* Launch Screen.storyboard */,
+				12272B8727FF72E000427932 /* ContentView.swift */,
 				12E8D9AF280965E3003B8F19 /* Home.swift */,
 				12E8D9B128096619003B8F19 /* Login.swift */,
 				12E8D9B32809666A003B8F19 /* Register.swift */,
@@ -438,9 +432,7 @@
 				12272B8827FF72E000427932 /* ContentView.swift in Sources */,
 				12E8D9BD2809678F003B8F19 /* AdvertisementView.swift in Sources */,
 				12E8D9BA28096717003B8F19 /* SettingView.swift in Sources */,
-				12272BB227FF86F300427932 /* test.swift in Sources */,
 				12E8D99028096154003B8F19 /* LocationManagerHelper.swift in Sources */,
-				1259943827FF89D800E9A86B /* SwiftUIView.swift in Sources */,
 				12E8D9A5280963E9003B8F19 /* ForgetPasswordViewModel.swift in Sources */,
 				12E8D99B280962C3003B8F19 /* PickerImageModel.swift in Sources */,
 				12272B8627FF72E000427932 /* COLOMBO_BSCCOMP_PT_202_004App.swift in Sources */,

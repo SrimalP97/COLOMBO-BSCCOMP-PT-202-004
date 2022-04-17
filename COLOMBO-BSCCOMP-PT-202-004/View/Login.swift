@@ -23,10 +23,23 @@ struct Login: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: UIScreen.main.bounds.width / 1.5, height: UIScreen.main.bounds.height / 3)
-                            Text("Already have an account ?")
+                            
+                            
+                            NavigationLink {
+                                                Register()
+                                            } label: {
+                                                Text("Don't have an account ? | Sign UP")
+                                                    .fontWeight(.bold)
+                                                    .foregroundColor(Color.purple)
+                                            }
+                            
+                                            .padding()
+
+                            Text("Log into your account")
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black.opacity(0.7))
+                            
                             TextField("Email", text: self.$loginVM.login.email)
                                 .textInputAutocapitalization(.never)
                                 .padding()
@@ -62,13 +75,9 @@ struct Login: View {
                             .padding(.top, 25)
                             
                             
-                            
-                            
-                  
                     
-                            
                             HStack{
-                                Spacer()
+                            
                                 NavigationLink {
                                     ForgetPassword()
                                 } label: {
@@ -80,8 +89,7 @@ struct Login: View {
                             }
                             .padding(.top, 20)
                             
-                             Spacer()
-                            Spacer()
+                           Spacer()
                             
                             NavigationLink("Terms & Conditions", destination:TermsAndConditionsView()).foregroundColor(.black)
 
@@ -100,23 +108,18 @@ struct Login: View {
                             .cornerRadius(10)
                             .padding(.top, 25)
 
+                      
+                            
                         }
                         .padding(.horizontal, 25)
                     }
 
                 }
                 
-                NavigationLink {
-                    Register()
-                } label: {
-                    Text("Sign Up")
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.blue)
-                }
-                .padding()
 
 
             })
+                   
             
             if self.loginVM.message.alert{
                 GeometryReader{_ in
@@ -124,6 +127,10 @@ struct Login: View {
                 }
             }
         }
+        
+        
+       
+        
         
     }
     

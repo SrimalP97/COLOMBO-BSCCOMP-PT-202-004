@@ -14,10 +14,7 @@ struct AdvertisementModel{
     var landSize: Double
     var district: String
     var townVillage: String
-//    var selected : [UIImage]
-//    var show : Bool
-//    var images : Data
-//    var imagePicker : Bool
+
 }
 
 struct PickerAdvertisements{
@@ -42,4 +39,6 @@ struct PostAds: Identifiable{
     var province: String
     var deedImage : String
     var geo_location: String
+    
+    
 }

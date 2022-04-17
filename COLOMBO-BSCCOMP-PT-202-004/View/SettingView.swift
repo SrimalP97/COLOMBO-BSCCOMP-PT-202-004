@@ -16,7 +16,7 @@ struct SettingView: View {
             VStack{
             
                 Form{
-                Section(header: Text("Personal Infromation")) {
+                Section(header: Text("My Profile")) {
                     TextField("Name", text: $settingVM.userDetails.name).textInputAutocapitalization(.never)
                     TextField("NIC", text: $settingVM.userDetails.nic).textInputAutocapitalization(.never)
                     TextField("Mobile Number", text: $settingVM.userDetails.mobile).textInputAutocapitalization(.never)

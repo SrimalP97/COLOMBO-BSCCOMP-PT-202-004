@@ -1,0 +1,7 @@
+
+Showing Recent Errors Only
+Dependencies could not be resolved because no versions of 'googleappmeasurement' match the requirement 8.15.0 and root depends on 'googleappmeasurement' 8.15.0.
+
+
+
+Resolving Package Graph Failed    2022-04-07, 14:20    7.7 seconds
