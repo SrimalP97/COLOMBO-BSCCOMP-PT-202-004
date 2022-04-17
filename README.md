@@ -5,10 +5,10 @@ IOS Course Work
 
 Minimum ios sdk version : 15.0   
 
-Dependency management system : Swift Package Manager
-
-
 Used XCode version	: 13.3.1
+
+
+Dependency management system : Swift Package Manager
 
 
 
