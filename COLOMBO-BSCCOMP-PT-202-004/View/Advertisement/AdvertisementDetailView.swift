@@ -15,6 +15,8 @@ struct AdvertisementDetailView: View {
     var adsDetail: PostAds!
     @Binding var show: Bool
     
+       
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             HStack{
@@ -23,7 +25,7 @@ struct AdvertisementDetailView: View {
                 } label: {
                     Image(systemName: "chevron.left")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(Color("Color"))
+                        .foregroundColor(Color.blue)
                 }
                 
                 

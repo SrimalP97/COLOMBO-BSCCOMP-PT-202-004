@@ -24,7 +24,9 @@ struct AdvertisementItemView: View {
     var adsDetails : PostAds
     
     var body: some View {
+        
         VStack(spacing: 15){
+           
             HStack(spacing: 10){
                 Text(adsDetails.landORhouse)
                     .foregroundColor(.black)
